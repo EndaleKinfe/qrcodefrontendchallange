@@ -1,0 +1,87 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+  --Dark-blue: hsl(218, 44%, 22%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Montserrat Alternates", sans-serif;
+  background-color: var(--Light-gray);
+}
+
+.container {
+  text-align: center;
+  width: 300px;
+  margin: 60px auto;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: var(--White);
+}
+
+.container img {
+  width: 290px;
+  border-radius: 20px;
+}
+
+h2 {
+  font-size: 1.2em;
+  color: var(--Dark-blue);
+  width: 260px;
+  margin: 20px auto;
+}
+p {
+  font-size: 0.8em;
+  color: var(--Grayish-blue);
+  width: 260px;
+  margin: 20px auto;
+}
+
+@media screen and (min-width: 430px) {
+  .container {
+    width: 400px;
+  }
+
+  .container img {
+    width: 360px;
+  }
+
+  h2 {
+    width: 300px;
+  }
+  p {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    width: 250px;
+    box-sizing: border-box;
+  }
+
+  .container img {
+    width: 215px;
+  }
+
+  h2 {
+    width: 200px;
+  }
+  p {
+    width: 200px;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
